@@ -1,0 +1,38 @@
+{
+  "name": "tripify-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.3",
+    "graphql": "^14.5.4",
+    "graphql-tools": "^4.0.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-env": "^1.7.0",
+    "cloudinary": "^1.15.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "graphql-tag": "^2.10.1",
+    "mongoose": "^5.6.11",
+    "nodemon": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OumaimaHamzaoui/tripify-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OumaimaHamzaoui/tripify-backend/issues"
+  },
+  "homepage": "https://github.com/OumaimaHamzaoui/tripify-backend#readme"
+}
