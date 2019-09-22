@@ -1,5 +1,4 @@
-import Photo from "./Photo";
-
+//import Photo from "./Photo";
 
 export const resolvers = {
   Query: {
@@ -13,18 +12,16 @@ export const resolvers = {
       return result;
     }
   },
-  mutation: {
+  Mutation: {
     addPhoto: async (_, { input }, { models }) => {
       const photo = new models.Photo({
-        url: input.url,
-        user: input.user
+        url: input.url
       });
+      console.log("////", photo);
       const newPhoto = await photo.save();
+      console.log("----", newPhoto);
       return newPhoto;
     },
-   
-
-
     updatePhoto: async (_, { input: { id, url, user } }) => {
       const update = await Photo.findByIdAndUpdate(
         { _id: id },

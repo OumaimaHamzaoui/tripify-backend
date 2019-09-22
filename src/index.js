@@ -1,7 +1,7 @@
 const { ApolloServer } = require("apollo-server");
 const mongoose = require("mongoose");
-const Photo = require("./photos/Photo");
 import User from "./users/User";
+import Photo from "./photos/Photo";
 const { schema } = require("./schema");
 const server = new ApolloServer({
   schema,

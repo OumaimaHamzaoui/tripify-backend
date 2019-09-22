@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 
 const PhotoSchema = mongoose.Schema({
   url: String,
-  user: { type: mongoose.Schema.Types.ObjectId, ref: "User" }
+  user: { type: mongoose.Schema.Types.ObjectId, ref: "users" }
 });
-export default mongoose.model("Photo", PhotoSchema);
+const Photo = mongoose.model("Photo", PhotoSchema);
+export default Photo;

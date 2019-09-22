@@ -1,14 +1,10 @@
-  
 export const typeDef = `
             type Photo {
                 id: ID
-                url: String
-                user: User
+                url: String  
             }
             input PhotoInput {
-                id: ID
-                url: String
-                user: ID
+                url: String  
             }
             
 `;
